@@ -1,6 +1,5 @@
 package com.game.tprecyclerview.recyclerview;
 
-import android.content.Context;
 import android.support.v4.view.ViewCompat;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SimpleItemAnimator;
@@ -10,11 +9,6 @@ import android.support.v7.widget.SimpleItemAnimator;
  */
 
 public class RecyclerViewItemAnimator extends SimpleItemAnimator {
-
-    private Context context;
-    public RecyclerViewItemAnimator(Context context){
-        this.context = context;
-    }
 
     @Override
     public boolean animateRemove(RecyclerView.ViewHolder holder) {

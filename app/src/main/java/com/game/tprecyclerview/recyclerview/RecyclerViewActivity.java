@@ -52,7 +52,7 @@ public class RecyclerViewActivity extends AppCompatActivity{
         recyclerView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
 
         //ItemAnimator
-        recyclerView.setItemAnimator(new RecyclerViewItemAnimator(this));
+        recyclerView.setItemAnimator(new RecyclerViewItemAnimator());
     }
 
     //Ajout un élément à la recyclerView à l'index position
@@ -86,7 +86,7 @@ public class RecyclerViewActivity extends AppCompatActivity{
                     recyclerView.setLayoutManager(new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL));
                     break;
                 case R.id.addTweetButton:
-                    addTweetAtPosition(new Tweet(Color.GREEN, "Hello", "Ceci est un nouveau tweet"), 2);
+                    addTweetAtPosition(new Tweet(Color.GREEN, "Hello", "New Tweet"), 2);
                     break;
             }
         }
