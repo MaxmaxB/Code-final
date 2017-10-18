@@ -21,19 +21,19 @@ public class RecyclerViewHolder extends RecyclerView.ViewHolder implements View.
 
     private TextView pseudo, text;
     private ImageView avatar;
-    private RecyclerViewClickListener clickListener;
+//    private RecyclerViewClickListener clickListener;
 
     //itemView est la vue correspondante à une cellule
-    public RecyclerViewHolder(View itemView, RecyclerViewClickListener clickListener) {
-    //public RecyclerViewHolder(View itemView) {
+//    public RecyclerViewHolder(View itemView, RecyclerViewClickListener clickListener) {
+    public RecyclerViewHolder(View itemView) {
         super(itemView);
 
         pseudo = (TextView) itemView.findViewById(R.id.pseudo);
         text = (TextView) itemView.findViewById(R.id.text);
         avatar = (ImageView) itemView.findViewById(R.id.avatar);
 
-        itemView.setOnClickListener(this);
-        this.clickListener = clickListener;
+//        itemView.setOnClickListener(this);
+//        this.clickListener = clickListener;
     }
 
     //Fonction pour remplir la cellule en fonction d'un Tweet
@@ -45,7 +45,7 @@ public class RecyclerViewHolder extends RecyclerView.ViewHolder implements View.
 
     @Override
     public void onClick(View view) {
-        clickListener.onClick(view, getAdapterPosition());
+//        clickListener.onClick(view, getAdapterPosition());
     }
 
 }

@@ -17,7 +17,7 @@ import java.util.List;
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewHolder> {
 
     private List<Tweet> list;
-    private RecyclerViewHolder.RecyclerViewClickListener clickListener;
+//    private RecyclerViewHolder.RecyclerViewClickListener clickListener;
 
     //Constructeur avec en parametre notre liste de Tweets
     public RecyclerViewAdapter(List<Tweet> list) {
@@ -30,8 +30,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewHolder
     public RecyclerViewHolder onCreateViewHolder(ViewGroup viewGroup, int itemType) {
         View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.row_tweet,viewGroup,false);
 
-        //return new RecyclerViewHolder(view);
-        return new RecyclerViewHolder(view, clickListener);
+        return new RecyclerViewHolder(view);
+//        return new RecyclerViewHolder(view, clickListener);
     }
 
     //c'est ici que nous allons remplir notre cellule avec le texte/image de chaque Tweet
@@ -46,8 +46,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewHolder
         return list.size();
     }
 
-    public void setClickListener(RecyclerViewHolder.RecyclerViewClickListener clickListener){
-        this.clickListener = clickListener;
-    }
+//    public void setClickListener(RecyclerViewHolder.RecyclerViewClickListener clickListener){
+//        this.clickListener = clickListener;
+//    }
 
 }

@@ -49,10 +49,10 @@
     </LinearLayout>
 
     <!-- Pour décommenter facilement sélectionner tout et "CTRL + /" -->
-    <android.support.v7.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/recyclerView"
-        android:layout_below="@id/buttonsLayout"/>
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/recyclerView"-->
+        <!--android:layout_below="@id/buttonsLayout"/>-->
 
 </RelativeLayout>
